@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>lab2</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <link rel="stylesheet" media="screen" href="css/rest.css" />
+    <link rel="stylesheet" media="screen" href="css/screen.css" />
+</head>
+<body>
+    <h1 class="box">Lab 2: Please insert your information below</h1>
 
+    <form action="/submit" method="post" autocomplete="on">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div>
+            <label for="DateOfBirth">Date of Birth:</label>
+            <input type="date" id="DateOfBirth" name="DateOfBirth" required>
+        </div>
+
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        </div>
+    </form>
+</body>
+</html>
